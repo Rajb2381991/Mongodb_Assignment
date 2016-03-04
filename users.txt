@@ -1,0 +1,81 @@
+db.user.insert([{
+	"logininfo": {
+		"username": "bbb",
+		"password": "bbb"
+	},
+	"userprofile": {
+		"fullname": "b b b",
+		"age": "22",
+		"contact": "9090909090",
+		"address": [{
+			"plotno": "2011",
+			"street": "shivaji chowk",
+			"city": "solapur",
+			"state": "maharashtra"
+		}, {
+			"plotno": "222",
+			"street": "Shanti Vihar",
+			"city": "pune",
+			"state": "maharashtra"
+		}]
+	},
+	"role": {
+		"roleid": "102",
+		"rolename": "superadmin"
+	}
+}, {
+	"logininfo": {
+		"username": "ccc",
+		"password": "ccc"
+	},
+	"userprofile": {
+		"fullname": "c c c",
+		"age": "23",
+		"contact": "8989898989",
+		"address": [{
+			"plotno": "2014",
+			"street": "gokak nagar",
+			"city": "sangali",
+			"state": "maharashtra"
+		}, {
+			"plotno": "3333",
+			"street": "Shinde colony",
+			"city": "pune",
+			"state": "maharashtra"
+		}]
+	},
+	"role": {
+		"roleid": "103",
+		"rolename": "editor"
+	}
+},
+{
+	"logininfo": {
+		"username": "aaa",
+		"password": "aaa"
+	},
+	"userprofile": {
+		"fullname": "a a a",
+		"age": "21",
+		"contact": "9999999999",
+		"address": [{
+			"plotno": "2010",
+			"street": "renuka nagar",
+			"city": "solapur",
+			"state": "maharashtra"
+		}, {
+			"plotno": "1111",
+			"street": "omkar apartment",
+			"city": "pune",
+			"state": "maharashtra"
+		}]
+	},
+	"role": {
+		"roleid": "101",
+		"rolename": "admin"
+	}
+}
+])
+
+db.user.insert(
+)
