@@ -1,0 +1,40 @@
+1=>	db.user.find().preety();	// print all user details
+2=>	db.user.find("logininfo.username":"bbb").preety();  // print all detail of username is bbb.
+3=>	db.post.aggregate([{$project: {_id: 1, count: {$size: '$comment'},likes:{$size:'$like'}}}]) //count comment 			and like
+4=>	db.post.aggregate([{$project: {_id: 1, count: {$size: '$comment'}}}]) // counts comment
+
+5=> db.post.aggregate([
+	    {
+		"$unwind": "$comment"
+	    },
+	    {
+		"$group": {
+		    "_id": "$comment.owner",
+		    "count": {
+		        "$sum": 1
+		    }
+		}
+	    },
+	    {
+		"$group": {
+		    "_id":"posterId",
+		    "total": {
+		        "$sum": "$count"
+		    }
+		}
+	    }
+	])  // find all how many comments user given for whole post.
+
+6 => db.post.aggregate([
+    {
+        "$unwind": "$comment"
+    },
+    {
+        "$group": {
+            "_id": "$comment.owner",
+            "count": {
+                "$sum": 1
+            }
+        }
+    }
+]) // find total comments of a post.
