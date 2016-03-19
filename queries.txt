@@ -1,6 +1,27 @@
-
-##Query to find comments on the basic of user name
-db.pages.find({"posts.heading":"webonise lab","posts.comments.comment_by":"Arjun"},{"posts.comments.$":1}).pretty();
-
-##Query to no. of posts per page
-db.pages.aggregate([{"$unwind": "$posts"},{"$group": {"_id": "$posts.heading","count": {"$sum": 1}}},{"$group": {"_id":"heading","total": {"$sum": "$count"}}}])
+1.	db.page.find().pretty();
+2.	db.post.find().pretty();
+3.	db.users.find().pretty();
+4.	db.user.find("username":"bbb").preety();
+5.	db.post.aggregate([{$project: {_id: 1, count: {$size: '$comment'},likes:{$size:'$like'}}}]) 
+6.	db.post.aggregate([{$project: {_id: 1, count: {$size: '$comment'}}}])
+7.	db.post.aggregate([
+	    {
+		"$unwind": "$comment"
+	    },
+	    {
+		"$group": {
+		    "_id": "$comment.owner",
+		    "count": {
+		        "$sum": 1
+		    }
+		}
+	    },
+	    {
+		"$group": {
+		    "_id":"posterId",
+		    "total": {
+		        "$sum": "$count"
+		    }
+		}
+	    }
+	])
