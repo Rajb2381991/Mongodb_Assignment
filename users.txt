@@ -1,0 +1,226 @@
+{
+	"_id" : ObjectId("56f26a543a9d98b174f49f3b"),
+	"user_id" : "1",
+	"full_name" : "a a a",
+	"user_name" : "aaa",
+	"password" : "aaa",
+	"logged_at" : "23/5/2017 6:10 AM",
+	"role" : {
+		"role_id" : "103",
+		"role_name" : "superadmin"
+	},
+	"address" : [
+		{
+			"address_type" : "residencial Address",
+			"plotno" : "2013",
+			"street" : "Vidi Gharkul",
+			"city" : "satara",
+			"state" : "Gujarat"
+		},
+		{
+			"address_type" : "Permanant Address",
+			"plotno" : "2001",
+			"street" : "Shanti Apartment",
+			"city" : "Patna",
+			"state" : "Andrapradesh"
+		}
+	]
+}
+{
+	"_id" : ObjectId("56f26ba73a9d98b174f49f3c"),
+	"user_id" : "2",
+	"full_name" : "b b b",
+	"user_name" : "bbb",
+	"password" : "bbb",
+	"logged_at" : "22/4/2016 1:10 PM",
+	"role" : {
+		"role_id" : "102",
+		"role_name" : "admin"
+	},
+	"address" : [
+		{
+			"address_type" : "residencial Address",
+			"plotno" : "2011",
+			"street" : "Saraswati Nagar",
+			"city" : "sangali",
+			"state" : "gujarat"
+		},
+		{
+			"address_type" : "Permanant Address",
+			"plotno" : "2012",
+			"street" : "Omkar Apartment",
+			"city" : "Patna",
+			"state" : ""
+		}
+	]
+}
+{
+	"_id" : ObjectId("56f26c1b3a9d98b174f49f3d"),
+	"user_id" : "3",
+	"full_name" : "c c c",
+	"user_name" : "ccc",
+	"password" : "ccc",
+	"logged_at" : "12/5/2017 2:20 PM",
+	"role" : {
+		"role_id" : "101",
+		"role_name" : "Editor"
+	},
+	"address" : [
+		{
+			"address_type" : "residencial Address",
+			"plotno" : "2002",
+			"street" : "Swami Nagar",
+			"city" : "satara",
+			"state" : "maharashtra"
+		},
+		{
+			"address_type" : "Permanant Address",
+			"plotno" : "2012",
+			"street" : "karuna Apartment",
+			"city" : "pune",
+			"state" : "maharashtra"
+		}
+	]
+}
+{
+	"_id" : ObjectId("56f271bc3a9d98b174f49f3e"),
+	"user_id" : "4",
+	"full_name" : "d d d",
+	"user_name" : "ddd",
+	"password" : "ddd",
+	"logged_at" : "13/4/2016 1:30 AM",
+	"role" : {
+		"role_id" : "102",
+		"role_name" : "admin"
+	},
+	"address" : [
+		{
+			"address_type" : "residencial Address",
+			"plotno" : "2001",
+			"street" : "krishna Nagar",
+			"city" : "sangali",
+			"state" : "maharashtra"
+		},
+		{
+			"address_type" : "Permanant Address",
+			"plotno" : "2011",
+			"street" : "kiran Apartment",
+			"city" : "rampure",
+			"state" : "maharashtra"
+		}
+	]
+}
+> 
+> db.users.find().pretty();
+{
+	"_id" : ObjectId("56f26a543a9d98b174f49f3b"),
+	"user_id" : "1",
+	"full_name" : "a a a",
+	"user_name" : "aaa",
+	"password" : "aaa",
+	"logged_at" : "23/5/2017 6:10 AM",
+	"role" : {
+		"role_id" : "103",
+		"role_name" : "superadmin"
+	},
+	"address" : [
+		{
+			"address_type" : "residencial Address",
+			"plotno" : "2013",
+			"street" : "Vidi Gharkul",
+			"city" : "satara",
+			"state" : "Gujarat"
+		},
+		{
+			"address_type" : "Permanant Address",
+			"plotno" : "2001",
+			"street" : "Shanti Apartment",
+			"city" : "Patna",
+			"state" : "Andrapradesh"
+		}
+	]
+}
+{
+	"_id" : ObjectId("56f26ba73a9d98b174f49f3c"),
+	"user_id" : "2",
+	"full_name" : "b b b",
+	"user_name" : "bbb",
+	"password" : "bbb",
+	"logged_at" : "22/4/2016 1:10 PM",
+	"role" : {
+		"role_id" : "102",
+		"role_name" : "admin"
+	},
+	"address" : [
+		{
+			"address_type" : "residencial Address",
+			"plotno" : "2011",
+			"street" : "Saraswati Nagar",
+			"city" : "sangali",
+			"state" : "gujarat"
+		},
+		{
+			"address_type" : "Permanant Address",
+			"plotno" : "2012",
+			"street" : "Omkar Apartment",
+			"city" : "Patna",
+			"state" : ""
+		}
+	]
+}
+{
+	"_id" : ObjectId("56f26c1b3a9d98b174f49f3d"),
+	"user_id" : "3",
+	"full_name" : "c c c",
+	"user_name" : "ccc",
+	"password" : "ccc",
+	"logged_at" : "12/5/2017 2:20 PM",
+	"role" : {
+		"role_id" : "101",
+		"role_name" : "Editor"
+	},
+	"address" : [
+		{
+			"address_type" : "residencial Address",
+			"plotno" : "2002",
+			"street" : "Swami Nagar",
+			"city" : "satara",
+			"state" : "maharashtra"
+		},
+		{
+			"address_type" : "Permanant Address",
+			"plotno" : "2012",
+			"street" : "karuna Apartment",
+			"city" : "pune",
+			"state" : "maharashtra"
+		}
+	]
+}
+{
+	"_id" : ObjectId("56f271bc3a9d98b174f49f3e"),
+	"user_id" : "4",
+	"full_name" : "d d d",
+	"user_name" : "ddd",
+	"password" : "ddd",
+	"logged_at" : "13/4/2016 1:30 AM",
+	"role" : {
+		"role_id" : "102",
+		"role_name" : "admin"
+	},
+	"address" : [
+		{
+			"address_type" : "residencial Address",
+			"plotno" : "2001",
+			"street" : "krishna Nagar",
+			"city" : "sangali",
+			"state" : "maharashtra"
+		},
+		{
+			"address_type" : "Permanant Address",
+			"plotno" : "2011",
+			"street" : "kiran Apartment",
+			"city" : "rampure",
+			"state" : "maharashtra"
+		}
+	]
+}

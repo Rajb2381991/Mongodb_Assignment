@@ -1,0 +1,9 @@
+
+1.	db.posts.aggregate([{$unwind:"$comments"},{$group:{_id:1,"count":{"$sum":1}}}]);  // count total comments
+2.db.posts.aggregate({$project : { _id :"$comments.user_id", count : {$size : "$comments"}}})   // group by post count comments.
+3.db.posts.aggregate({$project : { _id :"$likes.user_id", count : {$size : "$likes"}}})  //group by post count likes.
+4.db.posts.aggregate([{$match:{post_id:"2"}},{$project:{totalComments:{$size:"$comments"}}}]); // particular post count comments.
+
+db.collection.aggregate(
+   {$group : { _id : 'null', count : {$sum : 1}}}
+).result
